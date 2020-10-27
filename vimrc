@@ -3,8 +3,12 @@
 "====================================================================
 
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/vundle " 執行程式的捷徑
-call vundle#rc() " 呼叫執行程式
+set rtp+=~/.vim/bundle/Vundle.vim " 執行程式的捷徑
+call vundle#begin() " 呼叫執行程式
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
 "===============================================================
 " Write your plugins here
 "===============================================================
@@ -12,21 +16,29 @@ call vundle#rc() " 呼叫執行程式
 Plugin 'Yggdroot/indentLine'
 
 " Misc tools
-Plugin 'dense-analysis/ale'
 Plugin 'vim-airline/vim-airline'
+Plugin 'dense-analysis/ale'
 Plugin 'vim-scripts/taglist.vim'
-Plugin 'scrooloose/nerdtree'
+Plugin 'preservim/nerdtree'
 Plugin 'wesleyche/SrcExpl'
 Plugin 'wesleyche/Trinity'
 
-
-filetype plugin indent on " 啟用依照檔案類型，決定自動縮排樣式的功能
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
 "====================================================================
 " indentLine Settings
 "====================================================================
 let g:indentLine_char = '|'
 let g:indentLine_enabled = 1
 
+
+"====================================================================
+" Airline Settings
+"====================================================================
+let g:airline_theme='codedark'
+let g:airline_powerline_fonts = 1 " 修改字形(數字1為啟用的意思)
+set laststatus=2 " 設定狀態列顯示方式(數字2為永遠開啟)
 
 "====================================================================
 " ALE Settings
@@ -38,12 +50,6 @@ let g:ale_fixers = {
 \   'javascript': ['prettier_standard'],
 \   'php': ['php_cs_fixer', 'phpcbf'],
 \}
-"====================================================================
-" Airline Settings
-"====================================================================
-let g:airline_theme='codedark'
-let g:airline_powerline_fonts = 1 " 修改字形(數字1為啟用的意思)
-set laststatus=2 " 設定狀態列顯示方式(數字2為永遠開啟)
 
 "====================================================================
 " Trinity Settings
