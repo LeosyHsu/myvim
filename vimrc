@@ -115,6 +115,14 @@ autocmd WinLeave * setlocal nonumber
 " Make extra space remove
 autocmd BUfWritePre * :%s/\s\+$//e
 
+" Go back to the last cursor position                                                                                                                                                                               
+if has("autocmd")
+    autocmd BufReadPost *
+    \ if line("'\"") > 1 && line ("'\"") <= line("$") |
+    \   exe "normal g'\"" |
+    \ endif
+endif
+
 
 
 
