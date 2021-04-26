@@ -19,9 +19,14 @@ Plugin 'Yggdroot/indentLine'
 Plugin 'vim-airline/vim-airline'
 Plugin 'dense-analysis/ale'
 Plugin 'vim-scripts/taglist.vim'
+Plugin 'preservim/nerdcommenter'
 Plugin 'preservim/nerdtree'
 Plugin 'wesleyche/SrcExpl'
 Plugin 'wesleyche/Trinity'
+
+Plugin 'vim-latex/vim-latex'
+Plugin 'xuhdev/vim-latex-live-preview'
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -31,7 +36,6 @@ filetype plugin indent on    " required
 "====================================================================
 let g:indentLine_char = '|'
 let g:indentLine_enabled = 1
-
 
 "====================================================================
 " Airline Settings
@@ -50,6 +54,45 @@ let g:ale_fixers = {
 \   'javascript': ['prettier_standard'],
 \   'php': ['php_cs_fixer', 'phpcbf'],
 \}
+"====================================================================
+" NERDTree Commenter Settings
+"====================================================================
+" Create default mappings
+let g:NERDCreateDefaultMappings = 1
+
+" Add spaces after comment delimiters by default
+let g:NERDSpaceDelims = 1
+
+" Use compact syntax for prettified multi-line comments
+let g:NERDCompactSexyComs = 1
+
+" Align line-wise comment delimiters flush left instead of following code indentation
+let g:NERDDefaultAlign = 'left'
+
+" Set a language to use its alternate delimiters by default
+let g:NERDAltDelims_java = 1
+
+" Add your own custom formats or override the defaults
+let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }
+
+" Allow commenting and inverting empty lines (useful when commenting a region)
+let g:NERDCommentEmptyLines = 1
+
+" Enable trimming of trailing whitespace when uncommenting
+let g:NERDTrimTrailingWhitespace = 1
+
+" Enable NERDCommenterToggle to check all selected lines is commented or not
+let g:NERDToggleCheckAllLines = 1
+
+" change leader to ','
+let mapleader=","
+set timeout timeoutlen=1500
+
+
+"====================================================================
+" NERDTree Settings
+"====================================================================
+map <C-n>   :NERDTreeToggle<CR>
 
 "====================================================================
 " Trinity Settings
@@ -65,6 +108,11 @@ nmap <F10> :TrinityToggleTagList<CR>
 
 " Open and close the NERD Tree separately
 nmap <F11> :TrinityToggleNERDTree<CR>
+"====================================================================
+" Latex-live-preview Settings
+"====================================================================
+autocmd filetype tex setl updatetime=1000
+let g:livepreview_previewer = 'evince'
 
 "====================================================================
 " MISC Settings
@@ -115,7 +163,7 @@ autocmd WinLeave * setlocal nonumber
 " Make extra space remove
 autocmd BUfWritePre * :%s/\s\+$//e
 
-" Go back to the last cursor position                                                                                                                                                                               
+" Go back to the last cursor position
 if has("autocmd")
     autocmd BufReadPost *
     \ if line("'\"") > 1 && line ("'\"") <= line("$") |
