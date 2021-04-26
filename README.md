@@ -1,3 +1,9 @@
+# 使用方法如下
+- 打開目錄 `<ctrl> + <n>`
+- 打開目錄、taglist、source explorer `<F8>`
+- 快速註解：選擇該行數壓下 `,` 輸入`cc`
+- 快速解除註解：選擇該行數壓下 `,` 輸入`cu`
+
 # 本專案為以下主題、擴充進行整合，詳細設定請參閱原始github
 ** 使用的套件管理器為 [Vundle](https://github.com/gmarik/vundle)
 ## Theme
@@ -9,6 +15,9 @@
 ### 2) [`indentLine`](https://github.com/Yggdroot/indentLine)
 ### 3) [`Asynchronous Lint Engine`](https://github.com/dense-analysis/ale)
 ### 4) [`tagList`](https://github.com/vim-scripts/taglist.vim)
+### 5) [`NERDCommenter`](https://github.com/preservim/nerdcommenter)
 ### 5) [`NERDTree`](https://github.com/preservim/nerdtree)
 ### 6) [`SrcExpl`](https://github.com/wesleyche/SrcExpl)
 ### 7) [`Trinity`](https://github.com/wesleyche/Trinity)
+### 8) [`vim-latex`](https://github.com/vim-latex/vim-latex)
+### 9) [`vim-latex-live-preview`](https://github.com/xuhdev/vim-latex-live-preview)

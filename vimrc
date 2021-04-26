@@ -55,7 +55,7 @@ let g:ale_fixers = {
 \   'php': ['php_cs_fixer', 'phpcbf'],
 \}
 "====================================================================
-" NERDTree Commenter Settings
+" NERDCommenter Settings
 "====================================================================
 " Create default mappings
 let g:NERDCreateDefaultMappings = 1
