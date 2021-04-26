@@ -1,3 +1,13 @@
+# 安裝步驟
+```
+$ git clone https://github.com/LeosyHsu/myvim.git
+$ mv myvim ~/.vim
+```
+
+```
+Launch vim and run :PluginInstall
+```
+
 # 使用方法如下
 - 打開目錄 `<ctrl> + <n>`
 - 打開目錄、taglist、source explorer `<F8>`
