@@ -2,6 +2,7 @@
 ```
 $ git clone https://github.com/LeosyHsu/myvim.git
 $ mv myvim ~/.vim
+$ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ```
 
 ```
