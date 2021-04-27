@@ -9,7 +9,7 @@ Launch vim and run :PluginInstall
 ```
 
 # 使用方法如下
-- 打開目錄 `<ctrl> + <n>`
+- 打開目錄 `<F2>`
 - 打開目錄、taglist、source explorer `<F8>`
 - 快速註解：選擇該行數壓下 `,` 輸入`cc`
 - 快速解除註解：選擇該行數壓下 `,` 輸入`cu`
