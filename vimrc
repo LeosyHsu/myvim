@@ -151,7 +151,6 @@ set smartcase
 
 " Sheme color configuration
 syntax on
-
 "let g:codedark_conservative = 1
 set t_Co=256
 set t_ut=
