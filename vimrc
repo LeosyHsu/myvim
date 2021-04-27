@@ -14,6 +14,8 @@ Plugin 'VundleVim/Vundle.vim'
 "===============================================================
 " Layouts
 Plugin 'Yggdroot/indentLine'
+" Theme
+Plugin 'tomasiser/vim-code-dark'
 
 " Misc tools
 Plugin 'vim-airline/vim-airline'
@@ -92,7 +94,7 @@ set timeout timeoutlen=1500
 "====================================================================
 " NERDTree Settings
 "====================================================================
-map <C-n>   :NERDTreeToggle<CR>
+map <F2>   :NERDTreeToggle<CR>
 
 "====================================================================
 " Trinity Settings
@@ -151,6 +153,8 @@ set smartcase
 syntax on
 
 "let g:codedark_conservative = 1
+set t_Co=256
+set t_ut=
 colorscheme codedark
 
 " Event trigger
