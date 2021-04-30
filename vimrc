@@ -27,8 +27,6 @@ Plugin 'wesleyche/SrcExpl'
 Plugin 'wesleyche/Trinity'
 
 Plugin 'vim-latex/vim-latex'
-Plugin 'xuhdev/vim-latex-live-preview'
-
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -110,11 +108,6 @@ nmap <F10> :TrinityToggleTagList<CR>
 
 " Open and close the NERD Tree separately
 nmap <F11> :TrinityToggleNERDTree<CR>
-"====================================================================
-" Latex-live-preview Settings
-"====================================================================
-autocmd filetype tex setl updatetime=1000
-let g:livepreview_previewer = 'evince'
 
 "====================================================================
 " MISC Settings
