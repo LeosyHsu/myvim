@@ -31,4 +31,3 @@ Launch vim and run :PluginInstall
 ### 6) [`SrcExpl`](https://github.com/wesleyche/SrcExpl)
 ### 7) [`Trinity`](https://github.com/wesleyche/Trinity)
 ### 8) [`vim-latex`](https://github.com/vim-latex/vim-latex)
-### 9) [`vim-latex-live-preview`](https://github.com/xuhdev/vim-latex-live-preview)
