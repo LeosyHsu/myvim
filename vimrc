@@ -55,13 +55,6 @@ let g:ale_fixers = {
 \   'php': ['php_cs_fixer', 'phpcbf'],
 \}
 
-" run linters only when save files
-let g:ale_lint_on_text_changed = 'never'
-let g:ale_lint_on_insert_leave = 0
-" You can disable this option too
-" if you don't want linters to run on opening a file
-let g:ale_lint_on_enter = 0
-
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
 nmap <silent> <C-j> <Plug>(ale_next_wrap)
 "====================================================================
