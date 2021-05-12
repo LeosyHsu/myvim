@@ -14,6 +14,7 @@ Launch vim and run :PluginInstall
 - 打開目錄、taglist、source explorer `<F8>`
 - 快速註解：選擇該行數壓下 `,` 輸入`cc`
 - 快速解除註解：選擇該行數壓下 `,` 輸入`cu`
+- 跳至錯誤行 `<Ctrl> + <j>`、`<Ctrl> + <k>`
 
 # 本專案為以下主題、擴充進行整合，詳細設定請參閱原始github
 ** 使用的套件管理器為 [Vundle](https://github.com/gmarik/vundle)
