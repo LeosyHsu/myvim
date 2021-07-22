@@ -90,6 +90,7 @@ let g:NERDToggleCheckAllLines = 1
 " change leader to ','
 let mapleader=","
 set timeout timeoutlen=1500
+map <C-_> <Leader>c<space>
 
 
 "====================================================================
